@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Large/local ML artifacts
+checkpoints/*.pt
+checkpoints/*.pth
+checkpoints/*.ckpt
+data/
+
+# Keep sample folders but do not accidentally commit personal images
+sample/ground/*
+!sample/ground/.gitkeep
+sample/aerial/*
+!sample/aerial/.gitkeep
+
+# Generated outputs
+outputs/
